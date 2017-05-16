@@ -1,0 +1,44 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="broker">
+
+    <ion-card>
+
+        <ion-card-content>
+            <img src="{{broker.profilePic}}"/>
+            <h2>{{broker.firstName}}</h2>
+            <h3>{{broker.type}}</h3>
+        </ion-card-content>
+
+        <ion-list>
+            <ion-item>
+                <ion-icon name="call" item-left></ion-icon>
+                <p>Call Office</p>
+                <h2>{{broker.callOffice}}</h2>
+            </ion-item>
+            <ion-item>
+                <ion-icon name="call" item-left></ion-icon>
+                <p>Call Mobile</p>
+                <h2>{{broker.callMobile}}</h2>
+            </ion-item>
+            <ion-item>
+                <ion-icon name="text" item-left></ion-icon>
+                <p>Text</p>
+                <h2>{{broker.msgText}}</h2>
+            </ion-item>
+            <ion-item>
+                <ion-icon name="mail" item-left></ion-icon>
+                <p>Email</p>
+                <h2>{{broker.email}}</h2>
+            </ion-item>
+        </ion-list>
+
+    </ion-card>
+
+</ion-content>
